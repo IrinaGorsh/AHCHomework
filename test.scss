@@ -903,11 +903,22 @@ input#price {
     position: absolute;   
     right: 0;
     left: auto;
+   
+    
   }
 
   .dropdown:hover .dropdown_content {
     display: flex;
     flex-direction: column;
+    top: -5px;
+   
+   
+    
+  }
+
+  .dropdown_list {
+    list-style-type: none;
+    
   }
 
   .dropdown_link{
@@ -920,6 +931,7 @@ input#price {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    position: relative;
   }
 
   .view {
