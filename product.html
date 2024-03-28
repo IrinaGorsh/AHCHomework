@@ -13,11 +13,12 @@
     <title>Product</title>
 </head>
 <body>
-    <section class="product">
+    <div class="container">
+      <section class="product">
         <div class="product_flex">
-            <nav class="menu">
-                <ul class="menu-list">
-                  <li class="menu-item"><a href="#" class="menu-title">Category</a>
+            <nav class="l_menu">
+                <ul class="l_menu-list">
+                  <li class="l_menu-item"><a href="#" class="l_menu-title">Category</a>
                     <details>
                       <summary><span class="sr-only">Open sub-menu</span></summary>
                       <nav class="sub-menu">
@@ -32,7 +33,7 @@
                         </nav>
                         </details>
                     </li>
-                    <li class="menu-item"><a href="#" class="menu-title">Brand</a>
+                    <li class="l_menu-item"><a href="#" class="l_menu-title">Brand</a>
                         <details>
                           <summary><span class="sr-only">Open sub-menu</span></summary>
                           <nav class="sub-menu">
@@ -47,7 +48,7 @@
                             </nav>
                             </details>
                             </li>
-                            <li class="menu-item"><a href="#" class="menu-title">Designer</a>
+                            <li class="l_menu-item"><a href="#" class="l_menu-title">Designer</a>
                                 <details>
                                   <summary><span class="sr-only">Open sub-menu</span></summary>
                                   <nav class="sub-menu">
@@ -66,46 +67,46 @@
                 </ul>
               </nav>
              <div class="products__container">
-              <div class="products__filter">
+              <!--<div class="products__filter">-->
                 <div class="filters">
                   <div class="filter">
-                <h2 class="ftext ftext_title">TRENDING NOW</h2>
+                <h2 class="ftext ftext_product ftext_title">TRENDING NOW</h2>
                 <div class="fcategories">  
-                  <a href="#" class="ftext ftext_styles">Bohemian</a>
+                  <a href="#" class="ftext ftext_product ftext_styles">Bohemian</a>
                   <div class="grey__vline"></div>
-                  <a href="#" class="ftext ftext_styles">Bohemian</a>
+                  <a href="#" class="ftext ftext_product ftext_styles">Bohemian</a>
                   <div class="grey__vline"></div>
-                  <a href="#" class="ftext ftext_styles">Bohemian</a>
+                  <a href="#" class="ftext ftext_product ftext_styles">Bohemian</a>
                   <div class="grey__vline"></div>
                 </div>
                 <div class="fcategories">  
-                  <a href="#" class="ftext ftext_styles">Bohemian</a>
+                  <a href="#" class="ftext ftext_product ftext_styles">Bohemian</a>
                   <div class="grey__vline"></div>
-                  <a href="#" class="ftext ftext_styles">Bohemian</a>
+                  <a href="#" class="ftext ftext_product ftext_styles">Bohemian</a>
                   <div class="grey__vline"></div>
-                  <a href="#" class="ftext ftext_styles">Bohemian</a>
+                  <a href="#" class="ftext ftext_product ftext_styles">Bohemian</a>
                   <div class="grey__vline"></div>
                 </div>
                 
                   </div>
                 
           <div class="filter filter_size">
-          <h2 class="ftext ftext_title">SIZE</h2>
+          <h2 class="ftext ftext_product ftext_title">SIZE</h2>
           <div class="fcategories fcategories_price">  
-          <input id="XXS" type="checkbox" class="size"> <label for="XXS" class="ftext">XXS</label>         
-          <input id="XS" type="checkbox" class="size"> <label for="XS" class="ftext">XS</label>          
+          <input id="XXS" type="checkbox" class="size"> <label for="XXS" class="ftext ftext_product ftext_styles">XXS</label>         
+          <input id="XS" type="checkbox" class="size"> <label for="XS" class="ftext ftext_product ftext_styles">XS</label>          
           <input id="S" type="checkbox" class="size">
-          <label for="S" class="ftext">S</label>
+          <label for="S" class="ftext ftext_product ftext_styles">S</label>
           <input id="M"  type="checkbox" class="size"> 
-          <label for="M" class="ftext">M</label>         
+          <label for="M" class="ftext ftext_product ftext_styles">M</label>         
           </div>
           <div class="fcategories fcategories_price">
             <input id="L"  type="checkbox" class="size">
-            <label for="L" class="ftext" >L</label>
+            <label for="L" class="ftext ftext_product ftext_styles" >L</label>
             <input id="XL"  type="checkbox" class="size">
-            <label for="XL" class="ftext">XL</label>
+            <label for="XL" class="ftext ftext_product ftext_styles">XL</label>
             <input id="XXL"  type="checkbox" class="size">
-            <label for="XXL" class="ftext">XXL</label>
+            <label for="XXL" class="ftext ftext_product ftext_styles">XXL</label>
            
           </div>
                     
@@ -113,213 +114,232 @@
                       </div>
                 
       <div class="filter filter_price">
-      <h2 class="ftext ftext_title">PRICE</h2>
+      <h2 class="ftext ftext_product ftext_title">PRICE</h2>
       <div class="fcategories">  
       <input type="range" id="price" min="52" max="402">
       </div>
-      <div class="fcategories">  
-        <h2 class="ftext ftext_styles">$52</h2>
-        <h2 class="ftext ftext_styles">$400</h2>       
+      <div class="fcategories fcategories_range">  
+        <h2 class="ftext ftext_product ftext_styles">$52</h2>
+        <h2 class="ftext ftext_product ftext_styles">$400</h2>       
              
       </div>
                         
       </div>
                 
       </div>
-      </div>
-                <div class="sort__bckgr">
-                  <div class="dropdowns">
-                      <div class="dropdown">
-                      <h2>Sort By</h2> <div class="grey__vline"></div>
-                      <button class="dropdown__btn">
-                      Name
-                      <i class="fa fa-caret-down"></i>
-                      </button>
-                        <div class="dropdown_content">
-                          <ul class="dropdown_list">
-                            <li><a href="#" class="dropdown_link">Name</a></li>
-                            <li><a href="#" class="dropdown_link">Name</a></li>
-                          </ul>                        
+      <!--</div>-->
+                <!--<div class="sort__product">-->
+                  <div class="sort__bckgr">
+                    <div class="dropdowns">
+                        <div class="dropdown">
+                          <div class="dropdown_title">
+                            <h2 class="ftext ftext_product ftext_styles">Sort By</h2> 
+                          </div>
                         
-                        
-                        </div>
-                  </div>
-                  <div class="dropdown">
-                    <h2>Sort By</h2> <div class="grey__vline"></div>
-                      <button class="dropdown__btn">
+                        <button class="dropdown__btn">
                         Name
                         <i class="fa fa-caret-down"></i>
-                      </button>
-                      <div class="dropdown_content">
-                        <a href="#" class="dropdown_link">Name</a>
-                        <a href="#" class="dropdown_link">Name</a>
-                        <a href="#" class="dropdown_link">Name</a>
+                        </button>
+                          <div class="dropdown_content">
+                            <ul class="dropdown_list">
+                              <li><a href="#" class="dropdown_link">Name</a></li>
+                              <li><a href="#" class="dropdown_link">Name</a></li>
+                              <li><a href="#" class="dropdown_link">Name</a></li>
+                            </ul>                        
+                          
+                          
+                          </div>
+                    </div>
+                    <div class="dropdown">
+                      <div class="dropdown_title">
+                        <h2 class="ftext ftext_product ftext_styles">Sort By</h2>
                       </div>
-                  </div>
-                                </div>
-                                
-                               </div> 
-                               <div class="product-box">
-                               
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a href="1111111" class="item-link">
-                                    <img class="item-img" src="img/product-1.jpg" alt="item">
-                                    <div class="txt-box">
-                                        <p class="description">Mango  People  T-shirt</p>
-                                        <p class="item-price">$52.00</p>
-                                    </div>
-                                    </a>
-                                    <div class="add-box">
-                                        <a href="222222" class="add">
-                                            <img src="img/cart-add.svg" alt="cart" class="cart">
-                                            <p class="add-txt">Add to Cart</p>
-                                        </a>
-                                    </div>
-                                </div>
-            
-                            </div>  
-                            <div class="view">
-                              <nav aria-label="Page navigation example" c>
-                                <ul class="pagination">
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                      <span aria-hidden="true">&laquo;</span>
-                                      <span class="sr-only">Previous</span>
-                                    </a>
-                                  </li>
-                                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                  <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                      <span aria-hidden="true">&raquo;</span>
-                                      <span class="sr-only">Next</span>
-                                    </a>
-                                  </li>
-                                </ul>
-                              </nav>
-                              <button>View All</button>
-                            </div>
+                      
+                        <button class="dropdown__btn">
+                          Name
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown_content">
+                          <a href="#" class="dropdown_link">Name</a>
+                          <a href="#" class="dropdown_link">Name</a>
+                          <a href="#" class="dropdown_link">Name</a>
+                        </div>
+                    </div>
+                                  </div>
+                                  
+                                 </div> 
+                                 <div class="product-box">
+                                 
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <a href="1111111" class="item-link">
+                                      <img class="item-img" src="img/product-1.jpg" alt="item">
+                                      <div class="txt-box">
+                                          <p class="description">Mango  People  T-shirt</p>
+                                          <p class="item-price">$52.00</p>
+                                      </div>
+                                      </a>
+                                      <div class="add-box">
+                                          <a href="222222" class="add">
+                                              <img src="img/cart-add.svg" alt="cart" class="cart">
+                                              <p class="add-txt">Add to Cart</p>
+                                          </a>
+                                      </div>
+                                  </div>
+              
+                              </div>  
+                              <div class="view">
+                                <nav aria-label="Page navigation example" class="pag_nav">
+                                  <ul class="pagination">
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Previous">
+                                        <!-- <span aria-hidden="true">&laquo;</span> -->
+                                        <i class="fa fa-angle-left"></i>
+                                        <span class="sr-only">Previous</span>
+                                        
+                                      </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><span class="page-link">.....</span></li>
+                                    <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Previous">
+                                        <!-- <span aria-hidden="true">&laquo;</span> -->
+                                        <i class="fa fa-angle-right"></i>
+                                        <span class="sr-only">Previous</span>
+                                        
+                                      </a>
+                                    </li>
+                                    
+                                  </ul>
+                                </nav>
+                                <button class="va_btn">View All</button>
+                              </div>
+                <!--</div>-->
              </div>
 
         
@@ -328,5 +348,6 @@
         </div>
         
     </section>
+    </div>
 </body>
 </html>
